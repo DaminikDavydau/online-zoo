@@ -514,7 +514,7 @@ footer button {
 	justify-content: center;
 	margin-top: 68px;
 }
-footer button {
+footer button:hover {
 	background: #E47209;
 }
 footer div.contact {
@@ -552,6 +552,28 @@ footer div.subscribe input {
 	height: 42px;
 	width: 228px;
 	border-radius: 2px;
+	padding-left: 10px;
+	display: inline;
+}
+footer div.subscribe button {
+	
+	margin-top: 14px;
+	margin-left: 10px;
+	height: 42px;
+	width: 129px;
+
+	text-transform: none;
+	background: white;
+	border: 1px solid #4B9200;
+	border-radius: 5px;
+	line-height: 140%;
+	text-align: center;
+	font-size: 16px;
+	color: #4B9200;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: inline;
 }
 
 footer .nav-foot {
