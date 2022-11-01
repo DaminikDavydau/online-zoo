@@ -8,6 +8,12 @@ body {
     width: 1600px;
 }
 
+button:hover {
+	
+}
+button:active {
+	background: #4B9200;
+}
 header {
 	display: flex;
 	align-items: center;
@@ -99,6 +105,9 @@ div#circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+#your_animal_online button:hover {
+	background: #E47209;
 }
 span.y-highlight {
 	color: #FFEE2E;
@@ -196,6 +205,9 @@ section#pets div.arrow {
 	color: white;
 	text-align: center;
 	line-height: 58px;
+}
+section#pets div.arrow:active {
+	background: #4B9200;
 }
 .grid-container {
 	width: 1159px;
@@ -467,8 +479,67 @@ section#testimonials button.feedback {
 	margin-top: 32px;
 	margin-left: 220px;
 }
-
+section#testimonials button.feedback {
+	background: #E47209;
+}
 img.leaves_s4 {
 	position: absolute;
 	margin-top: 645px;
 	margin-left: 1354px;
+}
+
+
+footer {
+	height: 443px;
+	width: 1600px;
+	background: #111115;
+	padding-top: 41px;
+	z-index: 900;
+}
+
+footer button {
+	text-transform: uppercase;
+	background: linear-gradient(to bottom right, #F9804B, #FE9013);
+	border: none;
+	border-radius: 5px;
+	height: 54px;
+	width: 298px;
+	line-height: 140%;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 68px;
+}
+footer button {
+	background: #E47209;
+}
+footer div.contact {
+	margin-left: 220px;
+}
+footer div.sm {
+	margin-top: 44px;
+}
+footer p.sm {
+	margin-bottom: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+footer p.sm img {
+	margin-right: 12px;
+}
+
+footer .nav-foot {
+	position: absolute;
+	top: 371px;
+	left: 619px;
+
+}
+footer .nav-foot p {
+	margin-right: 58px;
+	color: white;
+}
