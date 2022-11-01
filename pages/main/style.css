@@ -8,9 +8,7 @@ body {
     width: 1600px;
 }
 
-button:hover {
-	
-}
+
 button:active {
 	background: #4B9200;
 }
@@ -79,7 +77,7 @@ div#circle {
 	margin-left: 807px;
 	height: 465px;
 	width: 465px;
-	background-color: #F9804B;
+	background: linear-gradient(to bottom right, #F9804B, #FE9013);
 	border-radius: 233px;
 }
 #your_animal_online h2 {
@@ -99,7 +97,7 @@ div#circle {
 	position: absolute;
 	margin-top: 626px;
 	margin-left: 983px;
-	background-color: #F9804B;
+	background: linear-gradient(to bottom right, #F9804B, #FE9013);
 	border-radius: 25px;
 	border: none;
 	height: 54px;
@@ -114,6 +112,9 @@ div#circle {
 }
 #your_animal_online button:hover {
 	background: #E47209;
+}
+#your_animal_online button:active {
+	background: #4B9200;
 }
 span.y-highlight {
 	color: #FFEE2E;
@@ -214,7 +215,7 @@ section#pets div.arrow {
 }
 
 section#pets div.arrow:hover {
-	background: #F9804B
+	background: #E47209;
 }
 section#pets div.arrow:active {
 	background: #4B9200;
@@ -296,7 +297,7 @@ button#favorite {
 	
 }
 button#favorite:hover {
-	background: #F9804B
+	background: #E47209;
 }
 button#favorite:active {
 	background: #4B9200;
@@ -431,11 +432,12 @@ section#pick_and_feed button.feed {
 }
 
 section#pick_and_feed button.feed:hover {
-	background: #F9804B
+	background: #E47209;
 }
 section#pick_and_feed button.feed:active {
 	background: #4B9200;
 }
+
 
 
 section#testimonials {
@@ -467,6 +469,36 @@ section#testimonials .tests {
 	border-radius: 20px;
 	border: 2px solid #FEBDAB;
 }
+section#testimonials .tests_head {
+	margin-top: 15px;
+	margin-left: 16px;
+	display: flex;
+}
+section#testimonials div.tests_head_name {
+	margin-left: 10px;
+}
+section#testimonials .tests_head_name p:first-child {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 120%;
+}
+section#testimonials .tests_head_name p:nth-child(2) {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 120%;
+	color: #BDBDBD;
+}
+
+section#testimonials .tests_body {
+	margin-top: 11px;
+	margin-left: 16px;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 120%;
+	color: #767474;
+	width: 237px;
+}
+
 section#testimonials .progress-container {
 	width:599px;
 	height:8px;
@@ -502,7 +534,7 @@ section#testimonials button.feedback {
 	margin-left: 220px;
 }
 section#testimonials button.feedback:hover {
-	background: #F9804B
+	background: #E47209;
 }
 section#testimonials button.feedback:active {
 	background: #4B9200;
@@ -543,7 +575,7 @@ footer button {
 	margin-top: 68px;
 }
 footer button:hover {
-	background: #F9804B
+	background: #E47209;
 }
 footer button:active {
 	background: #4B9200;
@@ -608,11 +640,13 @@ footer div.subscribe button {
 	justify-content: center;
 	display: inline;
 }
-footer button:hover {
+footer div.subscribe button:hover {
 	background: #4B9200;
+	color: white;
 }
-footer button:active {
+footer div.subscribe button:active {
 	color: #4B9200;
+	background: white;
 	border: 1px solid #4B9200;
 }
 
@@ -626,6 +660,12 @@ footer .nav-foot a {
 	margin-right: 58px;
 	margin-left: 0px;
 	color: white;
+}
+footer .nav-foot a:first-child {
+	color: #F9804B;
+}
+footer .nav-foot a:hover {
+	color: #F9804B;
 }
 footer div.copyright-foot {
 	position: absolute;
