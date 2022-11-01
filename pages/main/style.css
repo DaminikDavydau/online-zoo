@@ -50,14 +50,20 @@ nav a {
 	font-size: 16px;
 	font-weight: 500;
 
+
 }
 nav a.copyright {
 	margin-left: 438px;
-
 }
-nav a:hover, nav a:active, nav a:visited, nav a:link {
+nav a:active, nav a:visited, nav a:link {
 	text-decoration: none;
 	color: white;
+}
+nav a.light {
+	color: #F9804B;
+}
+a.inter:hover {
+	color: #F9804B
 }
 
 section#your_animal_online {
@@ -206,6 +212,10 @@ section#pets div.arrow {
 	text-align: center;
 	line-height: 58px;
 }
+
+section#pets div.arrow:hover {
+	background: #F9804B
+}
 section#pets div.arrow:active {
 	background: #4B9200;
 }
@@ -268,7 +278,7 @@ section#pets img.icon {
 	height: 38px;
 	width: 48px;
 }
-#favorite {
+button#favorite {
 	margin-right: auto;
   	margin-left: auto;
   	background: #FE9013;
@@ -284,6 +294,12 @@ section#pets img.icon {
 	font-size: 16px;
 	color: white;
 	
+}
+button#favorite:hover {
+	background: #F9804B
+}
+button#favorite:active {
+	background: #4B9200;
 }
 
 
@@ -395,7 +411,7 @@ section#pick_and_feed .process-p {
 	font-weight: 400;
 }
 
-section#pick_and_feed .feed {
+section#pick_and_feed button.feed {
 	text-transform: uppercase;
 	background: linear-gradient(to bottom right, #F9804B, #FE9013);
 	border-radius: 25px;
@@ -414,6 +430,12 @@ section#pick_and_feed .feed {
 	margin-right: auto;
 }
 
+section#pick_and_feed button.feed:hover {
+	background: #F9804B
+}
+section#pick_and_feed button.feed:active {
+	background: #4B9200;
+}
 
 
 section#testimonials {
@@ -479,9 +501,13 @@ section#testimonials button.feedback {
 	margin-top: 32px;
 	margin-left: 220px;
 }
-section#testimonials button.feedback {
-	background: #E47209;
+section#testimonials button.feedback:hover {
+	background: #F9804B
 }
+section#testimonials button.feedback:active {
+	background: #4B9200;
+}
+
 img.leaves_s4 {
 	position: absolute;
 	margin-top: 645px;
@@ -497,7 +523,9 @@ footer {
 	z-index: 900;
 	position: relative;
 }
-
+footer a.logo-foot {
+	text-align: left;
+}
 footer button {
 	text-transform: uppercase;
 	background: linear-gradient(to bottom right, #F9804B, #FE9013);
@@ -515,8 +543,13 @@ footer button {
 	margin-top: 68px;
 }
 footer button:hover {
-	background: #E47209;
+	background: #F9804B
 }
+footer button:active {
+	background: #4B9200;
+}
+
+
 footer div.contact {
 	margin-left: 220px;
 }
@@ -564,16 +597,23 @@ footer div.subscribe button {
 
 	text-transform: none;
 	background: white;
-	border: 1px solid #4B9200;
+	border: 1px solid #000;
 	border-radius: 5px;
 	line-height: 140%;
 	text-align: center;
 	font-size: 16px;
-	color: #4B9200;
+	color: #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	display: inline;
+}
+footer button:hover {
+	background: #4B9200;
+}
+footer button:active {
+	color: #4B9200;
+	border: 1px solid #4B9200;
 }
 
 footer .nav-foot {
