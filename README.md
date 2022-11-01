@@ -1,1 +1,1 @@
-https://daminikdavydau.github.io/online-zoo/main
+https://daminikdavydau.github.io/online-zoo/pages/main
