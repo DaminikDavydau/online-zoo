@@ -135,6 +135,10 @@ div.leaves_s2 {
 	width: 200px;
 	overflow: hidden;
 }
+img.leaves_s2 {
+	height: 605px;
+	width: 293px;
+}
 div.row {
   	display: flex;
   	width: 1161px;
@@ -547,6 +551,7 @@ img.leaves_s4 {
 }
 
 
+
 footer {
 	height: 443px;
 	width: 1600px;
@@ -560,6 +565,7 @@ footer a.logo-foot {
 }
 footer button {
 	text-transform: uppercase;
+	text-decoration: none;
 	background: linear-gradient(to bottom right, #F9804B, #FE9013);
 	border: none;
 	border-radius: 5px;
@@ -574,6 +580,10 @@ footer button {
 	justify-content: center;
 	margin-top: 68px;
 }
+a.donate-foot:active, a.donate-foot:visited, a.donate-foot:link, a.donate-foot:hover {
+	text-decoration: none;
+	color: white;
+}
 footer button:hover {
 	background: #E47209;
 }
@@ -582,22 +592,40 @@ footer button:active {
 }
 
 
+
 footer div.contact {
 	margin-left: 220px;
 }
 footer div.sm {
 	margin-top: 44px;
 }
-footer p.sm {
+footer div.sm-li {
 	margin-bottom: 10px;
-	color: white;
 	display: flex;
 	align-items: center;
+	color: white;
 	font-size: 16px;
 }
-footer p.sm img {
+footer div.sm-li:active {
+	color: #4B9200;
+}
+footer div.sm-img {
+	background: rgba(196, 196, 196, 0.5);
+	border: none;
+	border-radius: 13px;
+	height: 26px;
+	width: 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-right: 12px;
 }
+footer div.sm-img:active {
+	background: #4B9200;
+}
+
+
+
 
 footer div.subscribe {
 	position: absolute;
