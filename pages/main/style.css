@@ -238,48 +238,78 @@ section#pets div.arrow:active {
 	height: 426px;
 	border-radius: 5px;
 	background: linear-gradient(to bottom right, #FA6F32, #FE9013);
+	
 }
-.grid-item {
+section#pets .grid-item {
 	background: white;
 	height: 424px;
 	width: 364px;
 	margin: 1px;
 	border-radius: 4px;
 }
-section#pets img.main {
+div.main {
+	overflow: hidden;
 	height: 364px;
 	width: 364px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
+	z-index: 20;
+}
+img.main {
+	height: 364px;
+	width: 364px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	z-index: 20;
 }
 section#pets p.btn {
 	line-height: 140%;
-	margin-top: 8px;
 	font-size: 16px;
-	margin-left: 16px;
 	font-weight: bolder;
 	width: 294px;
+	z-index: 700;
 }
 section#pets p.small-p {
 	line-height: 120%;
 	margin-top: 0px;
-	margin-left: 16px;
 	font-size: 15px;
 	font-weight: 300;
+	z-index: 709;
+}
+.grid-item-foot {
+	margin-top: 0px;
+	padding-top: 8px;
+	padding-left: 16px;
+	padding-bottom: 8px;
+	background: rgba(0, 0, 0, 0.0);
+	z-index: 600;
+}
+
+.grid-item:hover img.main {
+	transform: scale(1.1);
+	transition: transform 2s;
+	opacity: 0.5;
+	z-index: 20;
+}
+.grid-item:hover .grid-item-foot {
+	transition: transform 2s;
+	background: rgba(256, 256, 256, 0.4);
+	transform: translate(0, -365px);
+	z-index: 900;
 }
 
 section#pets img.icon {
 	position: absolute;
 }
 .bamboo {
-	margin-top: 379px;
-	margin-left: 321px;
+	margin-top: 7px;
+	margin-left: 305px;
 	height: 29px;
 	width: 33px;
 }
 .meat {
-	margin-top: 374px;
-	margin-left: 310px;
+	margin-top: 2px;
+	margin-left: 294px;
 	height: 38px;
 	width: 48px;
 }
@@ -606,8 +636,17 @@ footer div.sm-li {
 	color: white;
 	font-size: 16px;
 }
-footer div.sm-li:active {
+footer div.sm-li a {
+	text-decoration: none;
+	color: white;
+}
+footer div.sm-li a:active {
+	text-decoration: none;
 	color: #4B9200;
+}
+footer div.sm-li a:hover {
+	text-decoration: none;
+	color: #FE9013;
 }
 footer div.sm-img {
 	background: rgba(196, 196, 196, 0.5);
@@ -620,11 +659,14 @@ footer div.sm-img {
 	justify-content: center;
 	margin-right: 12px;
 }
+
 footer div.sm-img:active {
 	background: #4B9200;
 }
 
-
+footer div.sm-img:hover {
+	background: #FE9013;
+}
 
 
 footer div.subscribe {
