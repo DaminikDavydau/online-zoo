@@ -749,3 +749,6 @@ footer div.copyright-foot {
 footer div.copyright-foot p {
 	margin-bottom: 10px;
 }
+footer div.copyright-foot p a {
+	color: white;
+}
