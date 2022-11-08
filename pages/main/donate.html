@@ -17,10 +17,10 @@
 			</h1>
 		</a>
 		<nav>
-			<a class="light" href="./index.html">About</a>
+			<a class="inter" href="./index.html">About</a>
 			<a class="inter" href="">Map</a>
 			<a class="inter" href="">Zoos</a>
-			<a class="inter" href="./donate.html">Donate</a>
+			<a class="light" href="./donate.html">Donate</a>
 			<a class="inter" href="">Contact us</a>
 			<a class="inter copyright" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Design by &#169</a>
 		</nav>
@@ -53,13 +53,28 @@
 						Amount
 					</p>
 					<div class="chose_amount_line">
-						<div id="line"></div>
-						<input type="radio" name="amount">
-						<input type="radio" name="amount" checked="checked">
-						<input type="radio" name="amount">
-						<input type="radio" name="amount"> 
+						<div id="line">
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+						</div>
+						
+						
+						<input class="chose_amount_radio first" type="radio" name="amount">
+						<input class="chose_amount_radio" type="radio" name="amount">
+						<input class="chose_amount_radio" type="radio" name="amount" checked="checked">
+						<input class="chose_amount_radio" type="radio" name="amount"> 
+						<input class="chose_amount_radio" type="radio" name="amount">
+						<input class="chose_amount_radio" type="radio" name="amount">
+						<input class="chose_amount_radio" type="radio" name="amount">
+						<input class="chose_amount_radio" type="radio" name="amount"> 
 					</div>
-					<p>
+					<p class="money">
 						<span class="money first">
 							$5000
 						</span>
@@ -82,13 +97,13 @@
 							$50&nbsp;&nbsp;&nbsp;&nbsp;
 						</span>
 						<span class="money">
-							$25&nbsp;&nbsp;&nbsp;&nbsp;
+							$25
 						</span>
 					</p>
 				</div>
 				<div class="an_amount">
-					<input class="an_amount" type="number" name="" placeholder="Another amount">
-					<span>$</span>
+					<input class="an_amount" type="number"  placeholder="Another amount">
+					<span style="color: #929699; font-size: 20px;">$</span>
 				</div>
 				<div class="radio_container">
 					<input class="radio_period" id="month" type="radio" name="radio">
