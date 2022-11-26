@@ -3,9 +3,6 @@ html, *, body {
 	padding: 0px;
 	font-family: roboto, arial;
 
-} 
-body {
-    width: 1600px;
 }
 
 
@@ -22,14 +19,22 @@ header {
 	z-index: 1000;
 	
 }
+header nav {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	width: 1160px;
+}
 a.logo {
-	margin-left: 220px;
+	
 	background-image: url("bg-logo.png");
 	background-repeat: no-repeat;
 	background-size: 82px 52px;
 	width: 82px;
 	height: 52px;
 	z-index: 1001;
+	margin-left: 0px;
 }
 a.logo:hover, a.logo:active, a.logo:visited, a.logo:link {
 	text-decoration: none;
@@ -37,6 +42,7 @@ a.logo:hover, a.logo:active, a.logo:visited, a.logo:link {
 h1 {
 	font-weight: 400;
 	font-size: 19px;
+	width: 82px;
 	text-align: center;
 	color: white;
 	line-height: 120%;
@@ -44,11 +50,9 @@ h1 {
 }
 
 nav a {
-	margin-left: 63px;
+	margin-left: 58px;
 	font-size: 16px;
 	font-weight: 500;
-
-
 }
 nav a.copyright {
 	margin-left: 438px;
@@ -60,9 +64,16 @@ nav a:active, nav a:visited, nav a:link {
 nav a.light {
 	color: #F9804B;
 }
+
+nav a:nth-of-type(2) {
+	margin-left: 63px;
+}
+
 a.inter:hover {
 	color: #F9804B
 }
+
+
 
 section#your_animal_online {
 	background-image: url("giant_panda.png");
@@ -78,7 +89,7 @@ div#circle {
 	height: 465px;
 	width: 465px;
 	background: linear-gradient(to bottom right, #F9804B, #FE9013);
-	border-radius: 233px;
+	border-radius: 50%;
 }
 #your_animal_online h2 {
 	position: absolute;
@@ -121,6 +132,7 @@ span.y-highlight {
 }
 
 
+
 section#the_backstage {
 	height: 583px;
 	width: 1600px;
@@ -141,6 +153,7 @@ img.leaves_s2 {
 }
 div.row {
   	display: flex;
+  	align-items: center;
   	width: 1161px;
   	height: 403px;
   	margin-right: auto;
@@ -148,10 +161,14 @@ div.row {
 }
 div.col1 {
   	flex: 50%;
+  	display: flex;
+  	justify-content: center;
+    overflow: hidden;
 }
 .col1 img {
 	width: 609px;
   	height: 403px;
+
 }
 div.col2 {
   	flex: 50%;
@@ -190,6 +207,7 @@ img.leaves_s3 {
 	margin-top: 646px;
 	margin-left: 0px;
 	height: 460px;
+	width: 292px;
 }
 img.leaves_s31 {
 	position: absolute;
@@ -211,7 +229,7 @@ section#pets div.arrow {
 	width: 62px;
 	height: 62px;
 	background: linear-gradient(to bottom right, #F9804B, #FE9013);
-	border-radius: 31px;
+	border-radius: 50%;
 	font-size: 22px;
 	color: white;
 	text-align: center;
@@ -234,8 +252,9 @@ section#pets div.arrow:active {
   	grid-template-columns: 366px 366px 366px;
   	
 }
-.grid-item-border{
+.grid-item-border {
 	height: 426px;
+	width: 366px;
 	border-radius: 5px;
 	background: linear-gradient(to bottom right, #FA6F32, #FE9013);
 	
@@ -336,6 +355,15 @@ button#favorite:hover {
 button#favorite:active {
 	background: #4B9200;
 }
+
+.grid-item-border:nth-of-type(6) {
+	display: none;
+}
+
+
+
+
+
 
 
 section#pick_and_feed {
@@ -474,6 +502,8 @@ section#pick_and_feed button.feed:active {
 
 
 
+
+
 section#testimonials {
 	width: 1600px;
 	height: 919px;
@@ -582,6 +612,9 @@ img.leaves_s4 {
 
 
 
+
+
+
 footer {
 	height: 443px;
 	width: 1600px;
@@ -651,7 +684,7 @@ footer div.sm-li a:hover {
 footer div.sm-img {
 	background: rgba(196, 196, 196, 0.5);
 	border: none;
-	border-radius: 13px;
+	border-radius: 50%;
 	height: 26px;
 	width: 26px;
 	display: flex;
@@ -753,6 +786,292 @@ footer div.copyright-foot p a {
 }
 
 
+@media screen and (min-width: 1601px) {
+body div#page-wrapper{
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
+
+@media screen and (max-width: 1600px) {
+	
+	body, header, main, section#your_animal_online, section#the_backstage, section#pets, section#pick_and_feed, section#testimonials, footer {
+		width: 100%;
+	}
+	nav a {
+		margin-left: calc(48px + (100vw - 1000px)/60);
+	}
+	nav a.copyright {
+		margin-left: calc(259px + (100vw - 1000px)/3.352);
+	} 
+	header nav {
+		width: calc(940px + (100vw - 1000px)/2.73);
+	}
+
+	section#your_animal_online {
+		height: calc(584px + (100vw - 1000px)/3.0613);
+		background-position: center;
+		background-size: calc(1198px + (100vw - 1000px)/1.4925) calc(584px + (100vw - 1000px)/3.0613);
+	}
+	div#circle {
+		position: absolute;
+		margin-top: calc(69px + (100vw - 1000px)/600*(92 - 69));
+		margin-left: calc(456px + (100vw - 1000px)/600*(807 - 456));
+		height: calc(367px + (100vw - 1000px)/600*(465 - 367));
+		width: calc(367px + (100vw - 1000px)/600*(465 - 367));
+	}
+	#your_animal_online h2 {
+		margin-top: calc(123px + (100vw - 1000px)/600*(166 - 123));
+		margin-left: calc(514px + (100vw - 1000px)/600*(880 - 514));
+		font-size: calc(85px + (100vw - 1000px)/600*(106.5 - 85));
+		width: calc(400px + (100vw - 1000px)/600*(500 - 400));
+	}
+	#your_animal_online button {
+		margin-top: calc(483px + (100vw - 1000px)/600*(626 - 483));
+		margin-left: calc(565px + (100vw - 1000px)/600*(983 - 565));
+	}
+
+
+	section#the_backstage {
+		height: calc(569px + (100vw - 1000px)/600*(583 - 569));
+		padding-top: calc(100px + (100vw - 1000px)/600*(140 - 100));
+	}
+	div.leaves_s2 {
+		position: absolute;
+		margin-top: calc(-80px + (100vw - 1000px)/600*(80 - 128));
+		margin-left: calc(1000px + (100vw - 1000px)/600*(1400 - 1000));
+		height: calc(500px + (100vw - 1000px)/600*(605 - 500));
+		width: calc(0px + (100vw - 1000px)/600*(200));
+		overflow: hidden;
+		right: 0px;
+	}
+	img.leaves_s2 {
+		height: calc(500px + (100vw - 1000px)/600*(605 - 500));
+	}
+	div.row {
+	  	width: calc(940px + (100vw - 1000px)/600*(1161 - 940));
+	  	height: calc(427px + (100vw - 1000px)/600*(403 - 427));
+	}
+	.col1 img {
+	  	height: calc(408px + (100vw - 1000px)/600*(403 - 408));
+	}
+	div.col2 {
+	  	padding-left: calc(31px + (100vw - 1000px)/600*(87 - 31));
+	}
+
+	section#pets {
+		height: calc(1075px + (100vw - 1000px)/600*(1106 - 1075));
+	}
+	img.leaves_s3 {
+		margin-top: calc(872px + (100vw - 1000px)/600*(646 - 872));
+		height: calc(202px + (100vw - 1000px)/600*(460 - 202));
+		width: calc(194px + (100vw - 1000px)/600*(292 - 194));
+
+	}
+	img.leaves_s31 {
+		margin-top: calc(895px + (100vw - 1000px)/600*(831 - 895));
+		right: 0px; 
+		height: calc(180px + (100vw - 1000px)/600*(275 - 180));
+		width: calc(241px + (100vw - 1000px)/600*(368 - 241));
+	}
+	section#pets div.courusel {
+	    grid-template-columns: calc(0px + (100vw - 1000px)/600*(62)) calc(940px + (100vw - 1000px)/600*(1159 - 940)) calc(0px + (100vw - 1000px)/600*(62));
+	    gap: 80px calc(0px + (100vw - 1000px)/600*(20));
+	   }
+
+   	section#pets div.arrow:nth-of-type(1) {
+		margin-right: calc(-715px + (100vw - 1000px)/600*(715));
+		z-index: 800;
+	}
+	.scnd {
+		margin-left: calc(-715px + (100vw - 1000px)/600*(715));
+		z-index: 801;
+	}
+
+	.grid-container {
+		width: calc(945px + (100vw - 1000px)/600*(1159 - 945));
+		height: calc(800px + (100vw - 1000px)/600*(874 - 800));
+		margin-right: auto;
+	  	margin-left: auto;
+	  	display: flex;
+	  	gap: calc(92px + (100vw - 1000px)/600*(20 - 92)) 30px;
+	  	justify-content: space-between;
+	  	flex-wrap: wrap;
+	  	
+	}
+	.grid-item-border{
+		height: calc(354px + (100vw - 1000px)/600*(426 - 354));
+		width: calc(295px + (100vw - 1000px)/600*(366 - 295));
+		
+	}
+	section#pets .grid-item {
+		height: calc(352px + (100vw - 1000px)/600*(424 - 352));
+		width: calc(293px + (100vw - 1000px)/600*(364 - 293));
+		margin: 1px;
+	}
+	div.main {
+		overflow: hidden;
+		height: calc(293px + (100vw - 1000px)/600*(364 - 293));
+		width: calc(293px + (100vw - 1000px)/600*(364 - 293));
+	}
+	img.main {
+		height: calc(293px + (100vw - 1000px)/600*(364 - 293));
+		width: calc(293px + (100vw - 1000px)/600*(364 - 293));
+	}
+	section#pets p.btn {
+		width: calc(221px + (100vw - 1000px)/600*(293 - 221));
+	}
+	.grid-item:hover .grid-item-foot {
+		transform: translate(0, calc(-293px + (100vw - 1000px)/600*(-365 + 293)));
+	}
+	.bamboo {
+		margin-left: calc(234px + (100vw - 1000px)/600*(305 - 234));
+		height: 29px;
+		width: 33px;
+	}
+	.meat {
+		margin-top: 2px;
+		margin-left: calc(222px + (100vw - 1000px)/600*(294 - 222));
+		height: 38px;
+		width: 48px;
+	}
+	.grid-item-border:nth-of-type(6) {
+		display: block;
+	}
+	.grid-item-border:nth-of-type(4) {
+		display: none;
+	}
+	.grid-item-border:nth-of-type(5) {
+		order: 2;
+	}
+	.grid-item-border:nth-of-type(3) {
+		order: 3;
+	}
+	.grid-item-border:nth-of-type(6) {
+		order: 4;
+	}
+	.grid-item-border:nth-of-type(7) {
+		order: 5;
+	}
+
+	section#pick_and_feed {
+		height: calc(876px + (100vw - 1000px)/600*(1004 - 876));
+		
+		padding-top: calc(30px + (100vw - 1000px)/600*(69 - 30));
+	}
+	div.frost_glass {
+		width: calc(940px + (100vw - 1000px)/600*(1160 - 940));
+		height: calc(796px + (100vw - 1000px)/600*(835 - 796));
+	}
+	section#pick_and_feed h2 {
+		margin-top: calc(30px + (100vw - 1000px)/600*(41 - 30));
+	}
+	section#pick_and_feed p.subt {
+		padding-left: calc(50px + (100vw - 1000px)/600*(99 - 50));
+		margin-top: calc(20px + (100vw - 1000px)/600*(30 - 20));
+	}
+	section#pick_and_feed p.covid-19-1 {
+		padding-left: calc(50px + (100vw - 1000px)/600*(99 - 50));
+		margin-top: calc(20px + (100vw - 1000px)/600*(40 - 20));
+		width: calc(823px + (100vw - 1000px)/600*(1061 - 823));
+	}
+	section#pick_and_feed p.covid-19-2{
+		padding-left: calc(50px + (100vw - 1000px)/600*(99 - 50));
+		margin-top: 10px;
+		width: calc(823px + (100vw - 1000px)/600*(863 - 823));
+	}
+		
+		section#pick_and_feed h3 {
+		margin-top: 58px; 49
+	}
+	section#pick_and_feed #process {
+		display: flex;
+		justify-content: space-between;
+	  	justify-content: center;
+	}
+	section#pick_and_feed .process-arr {
+		margin-top: 61px;
+		height: 35px;
+	}
+	section#pick_and_feed button.feed {
+		margin-top: calc(70px + (100vw - 1000px)/600*(60 - 70));
+	}
+
+
+	section#testimonials {
+		height: calc(741px + (100vw - 1000px)/600*(919 - 741));
+	}
+	section#testimonials h3 {
+		margin-top: calc(100px + (100vw - 1000px)/600*(140 - 100));
+	}
+	section#testimonials .test-grid {
+		margin-top: calc(30px + (100vw - 1000px)/600*(47 - 30));
+		display: flex;    
+		gap: 0px 30px;
+	 }
+	section#testimonials .tests {
+		width: calc(293px + (100vw - 1000px)/600*(268 - 293));
+	}
+	section#testimonials .tests:nth-of-type(4) {
+		display: none;
+	}
+
+	section#testimonials .tests_head {
+		margin-top: 10px;
+		margin-left: 16px;
+		display: flex;
+	}
+	section#testimonials div.tests_head_name {
+		margin-left: 6px;
+	}
+
+	section#testimonials .tests_body {
+		width: calc(250px + (100vw - 1000px)/600*(237 - 250));
+	}
+
+	section#testimonials .progress-container {
+		width: calc(390px + (100vw - 1000px)/600*(599 - 390));
+		height:8px;
+	}
+	section#testimonials .progressbar {
+		width: calc(75px + (100vw - 1000px)/600*(115 - 75));
+	}
+	section#testimonials button.feedback {
+		margin-top: calc(52px + (100vw - 1000px)/600*(32 - 52));
+		margin-left: calc(30px + (100vw - 1000px)/600*(220 - 30));
+	}
+	img.leaves_s4 {
+		position: absolute;
+		margin-top: calc(540px + (100vw - 1000px)/600*(645 - 540));
+		right: 0px;
+		width: calc(175px + (100vw - 1000px)/600*(247 - 175));
+		height: calc(286px + (100vw - 1000px)/600*(408 - 286));
+
+	}
+	footer div.contact {
+		margin-left: calc(30px + (100vw - 1000px)/600*(220 - 30));
+	}
+	footer div.sm {
+		margin-top: 42px;
+	}
+	footer div.subscribe {
+		margin-left: calc(571px + (100vw - 1000px)/600*(1013 - 571));
+	}
+	footer .nav-foot {
+		position: absolute;
+		top: 371px;
+		margin-left: calc(321px + (100vw - 1000px)/600*(619 - 321));
+
+	}
+	footer div.copyright-foot {
+		left: calc(741px + (100vw - 1000px)/600*(1152 - 741));
+		top: 341px;
+	}
+
+}
 
 
 
