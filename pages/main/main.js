@@ -116,7 +116,7 @@ function delay(time) {
 
 var setAnimals;
 var setCurrent = 0;
-var back = true;
+var back = false;
 
 function random(data) {
 	// Returns a random integer from 0 to 10:
@@ -168,21 +168,21 @@ function placeAnimals() {
 	if (back) {
 		for (let i = 0; i<animalPhoto; i+2) {
 			back = false;
-			animalPhoto[i].src = setCurrent[i/2].imgLink
-			animalFood[i].classList[1] = setCurrent[i/2].icon
-			animalFood[i].src = `${setCurrent[i/2].icon}.png`
-			animalName[i].innerHTML = setCurrent[i/2].name
-			animalNative[i].innerHTML = setCurrent[i/2].small_p
+			animalPhoto[i].src = setAnimals[setCurrent][i/2].imgLink
+			animalFood[i].classList[1] = setAnimals[setCurrent][i/2].icon
+			animalFood[i].src = `${setAnimals[setCurrent][i/2].icon}.png`
+			animalName[i].innerHTML = setAnimals[setCurrent][i/2].name
+			animalNative[i].innerHTML = setAnimals[setCurrent][i/2].small_p
 		}
 	}
 	else {
 		for (let i = 1; i<animalPhoto; i+2) {
 			back = true;
-			animalPhoto[i].src = setCurrent[(i-1)/2].imgLink
-			animalFood[i].classList[1] = setCurrent[(i-1)/2].icon
-			animalFood[i].src = `${setCurrent[(i-1)/2].icon}.png`
-			animalName[i].innerHTML = setCurrent[(i-1)/2].name
-			animalNative[i].innerHTML = setCurrent[(i-1)/2].small_p
+			animalPhoto[i].src = setAnimals[setCurrent][(i-1)/2].imgLink
+			animalFood[i].classList[1] = setAnimals[setCurrent][(i-1)/2].icon
+			animalFood[i].src = `${setAnimals[setCurrent][(i-1)/2].icon}.png`
+			animalName[i].innerHTML = setAnimals[setCurrent][(i-1)/2].name
+			animalNative[i].innerHTML = setAnimals[setCurrent][(i-1)/2].small_p
 		}
 	}
 	console.log('finish place animals')
