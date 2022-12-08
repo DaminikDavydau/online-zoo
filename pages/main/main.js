@@ -125,13 +125,15 @@ function random(data) {
 	let list = [[], [], []];
 	for (let i = 0; i<3; ++i) {
 		for (let j = 0; j<7; ++j) {
-			num = Math.floor(Math.random() * 15);
+			num = Math.floor(Math.random() * data.length);
+			console.log(num);
 			list[i].push(data[num]);
 			if (list[i].indexOf(data[num]) != j) {
 				j=j-1;
 				poped = list[i].pop()
 			}
 		}
+		console.log('')
 	}
 	console.log(list);
 	setAnimals = list;
