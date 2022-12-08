@@ -2,31 +2,31 @@
   "imgLink": "chameleon.jpg",
   "icon": "bamboo",
   "name": "CHAMELEON",
-  "small_p": "Native to Sri Lanka",
+  "small_p": "Native to Sri Lanka"
 },
   {
   "imgLink": "eagle.png",
   "icon": "meat",
   "name": "EAGLES",
-  "small_p": "Native to South America",
+  "small_p": "Native to South America"
 },
   {
   "imgLink": "pandas.png",
   "icon": "bamboo",
   "name": "GIANT PANDAS",
-  "small_p": "Native to Southwest China",
+  "small_p": "Native to Southwest China"
 },
   {
   "imgLink": "turtle.jpg",
   "icon": "meat",
   "name": "HAWKSBILL SEA TURTLE",
-  "small_p": "Native to Brazil",
+  "small_p": "Native to Brazil"
 },
   {
   "imgLink": "wolf.jpg",
   "icon": "meat",
   "name": "WOLF",
-  "small_p": "Native to Russia",
+  "small_p": "Native to Russia"
 },
 
 
@@ -34,31 +34,31 @@
   "imgLink": "gorilla.png",
   "icon": "bamboo",
   "name": "GORILLAS",
-  "small_p": "Native to Congo",
+  "small_p": "Native to Congo"
 },
   {
   "imgLink": "ara.png",
   "icon": "bamboo",
   "name": "ARA",
-  "small_p": "Native to Colombia",
+  "small_p": "Native to Colombia"
 },
   {
   "imgLink": "sloth.png",
   "icon": "bamboo",
   "name": "TWO-TOED SLOTH",
-  "small_p": "Mesoamerica, South America",
+  "small_p": "Mesoamerica, South America"
 },
   {
   "imgLink": "manoel.jpg",
   "icon": "meat",
   "name": "MANOEL",
-  "small_p": "Native to Mongolia",
+  "small_p": "Native to Mongolia"
 },
   {
   "imgLink": "cheetah.png",
   "icon": "meat",
   "name": "CHEETAHS",
-  "small_p": "Native to Africa",
+  "small_p": "Native to Africa"
 },
 
 
@@ -66,25 +66,25 @@
   "imgLink": "fox.jpg",
   "icon": "meat",
   "name": "POLAR FOX",
-  "small_p": "Native to Finland",
+  "small_p": "Native to Finland"
 },
   {
   "imgLink": "allidator.png",
   "icon": "meat",
   "name": "ALLIGATORS",
-  "small_p": "Native to Southeastern U. S.",
+  "small_p": "Native to Southeastern U. S."
 },
   {
   "imgLink": "penguins.png",
   "icon": "meat",
   "name": "PENGUINS",
-  "small_p": "Native to Antarctica",
+  "small_p": "Native to Antarctica"
 },
   {
   "imgLink": "deer.jpg",
   "icon": "bamboo",
   "name": "DEER",
-  "small_p": "Native to Canada",
-},
+  "small_p": "Native to Canada"
+}
 
 ]
