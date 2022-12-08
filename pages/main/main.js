@@ -120,7 +120,6 @@ function random(data) {
 	for (let i = 0; i<3; ++i) {
 		for (let j = 0; j<7; ++j) {
 			num = Math.floor(Math.random() * 15);
-			console.log(list)
 			list[i].push(data[num]);
 			if (list[i].indexOf(data[num]) != j) {
 				j=j-1;
@@ -135,14 +134,17 @@ function random(data) {
 
 fetch('./animals.json') //path to the file with json data
         .then(response => {
+        	console.log('json response')
             return response.json();
         })
         .then(data => {
+        	console.log('json data')
             random(data)
         });
 
 
 function placeAnimals() {
+	console.log('start place animals')
 	if (setCurrent<0) {
 		setCurrent = setAnimals.length-1;
 	}
@@ -175,12 +177,14 @@ function placeAnimals() {
 			animalNative[i].innerHTML = setCurrent[(i-1)/2].small_p
 		}
 	}
+	console.log('finish place animals')
 }
 
 
 
 
 async function rotate(dir) {
+	console.log('start rotate')
 	const arr = document.querySelectorAll('.arrow');
 	arr[0].setAttribute('onclick', '')
 	arr[1].setAttribute('onclick', '')
