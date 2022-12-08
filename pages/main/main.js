@@ -66,7 +66,6 @@ function inputsame(inpt) {
 	const money = document.querySelectorAll("span.money")
 	const moneyValues = [5000, 2000, 1000, 500, 250, 100, 50, 25];
 	const index = moneyValues.indexOf(parseInt(inpt))
-	console.log(index)
 	if (index == -1) {
 		removeCheck()
 	}
@@ -122,37 +121,31 @@ function random(data) {
 	// Returns a random integer from 0 to 10:
 	let num;
 	let poped;
-	let list = [[], [], []];
-	for (let i = 0; i<3; ++i) {
+	let list = [[], [], [], [], []];
+	for (let i = 0; i<5; ++i) {
 		for (let j = 0; j<7; ++j) {
 			num = Math.floor(Math.random() * data.length);
-			console.log(num);
 			list[i].push(data[num]);
 			if (list[i].indexOf(data[num]) != j) {
 				j=j-1;
 				poped = list[i].pop()
 			}
 		}
-		console.log('')
 	}
-	console.log(list);
 	setAnimals = list;
 	placeAnimals();
 }
 
 fetch('animals.json') //path to the file with json data
         .then(response => {
-        	console.log('json response')
             return response.json();
         })
         .then(data => {
-        	console.log('json data')
             random(data)
         });
 
 
 function placeAnimals() {
-	console.log('start place animals')
 	if (setCurrent<0) {
 		setCurrent = setAnimals.length-1;
 	}
@@ -169,7 +162,6 @@ function placeAnimals() {
 		for (let i = 0; i<animalPhoto.length; i+=2) {
 			back = false;
 			animalPhoto[i].src = setAnimals[setCurrent][i/2].imgLink
-			console.log(animalFood[i].classList[1])
 			animalFood[i].classList[1] = setAnimals[setCurrent][i/2].icon
 			animalFood[i].src = `${setAnimals[setCurrent][i/2].icon}.png`
 			animalName[i].innerHTML = setAnimals[setCurrent][i/2].name
@@ -180,22 +172,18 @@ function placeAnimals() {
 		for (let i = 1; i<animalPhoto.length; i+=2) {
 			back = true;
 			animalPhoto[i].src = setAnimals[setCurrent][(i-1)/2].imgLink
-			console.log(animalFood[i].classList[1])
 			animalFood[i].classList[1] = setAnimals[setCurrent][(i-1)/2].icon
 			animalFood[i].src = `${setAnimals[setCurrent][(i-1)/2].icon}.png`
 			animalName[i].innerHTML = setAnimals[setCurrent][(i-1)/2].name
 			animalNative[i].innerHTML = setAnimals[setCurrent][(i-1)/2].small_p
 		}
 	}
-
-	console.log('finish place animals')
 }
 
 
 
 
 async function rotate(dir) {
-	console.log('start rotate')
 	const arr = document.querySelectorAll('.arrow');
 	arr[0].setAttribute('onclick', '')
 	arr[1].setAttribute('onclick', '')
@@ -251,7 +239,7 @@ async function rotate(dir) {
 	}
 }
 	
-	await delay(2100)
+	await delay(2000)
 	arr[0].setAttribute('onclick', 'rotate("left")')
 	arr[1].setAttribute('onclick', 'rotate("right")')
 	//await delay(3000);

@@ -85,6 +85,63 @@
   "icon": "bamboo",
   "name": "DEER",
   "small_p": "Native to Canada"
-}
+},
+  {
+  "imgLink": "owl.jpg",
+  "icon": "meat",
+  "name": "SNOWY OWL",
+  "small_p": "Native to North America"
+},
 
+
+  {
+  "imgLink": "alpaca.jpg",
+  "icon": "bamboo",
+  "name": "ALPACA",
+  "small_p": "Native to South America"
+},
+  {
+  "imgLink": "redfox.jpg",
+  "icon": "meat",
+  "name": "RED FOX",
+  "small_p": "Native to United States"
+},
+  {
+  "imgLink": "seal.jpg",
+  "icon": "meat",
+  "name": "SEAL",
+  "small_p": "Native to Norway"
+},
+  {
+  "imgLink": "bat.jpg",
+  "icon": "meat",
+  "name": "BAT",
+  "small_p": "Native to China"
+},
+  {
+  "imgLink": "sandcat.jpg",
+  "icon": "meat",
+  "name": "SAND CAT",
+  "small_p": "Native to Algerian Sahara"
+},
+
+
+  {
+  "imgLink": "meerkat.jpg",
+  "icon": "meat",
+  "name": "MEERKAT",
+  "small_p": "Native to southern Africa"
+},
+  {
+  "imgLink": "spermophilus.jpg",
+  "icon": "bamboo",
+  "name": "SUSLIKS",
+  "small_p": "Native to Asia"
+},
+  {
+  "imgLink": "kolibri.jpg",
+  "icon": "meat",
+  "name": "KOLIBRI",
+  "small_p": "Native to Caribbean"
+}
 ]
