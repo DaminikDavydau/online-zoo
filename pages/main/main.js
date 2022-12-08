@@ -128,6 +128,7 @@ function random(data) {
 			}
 		}
 	}
+	console.log(list);
 	setAnimals = list;
 	placeAnimals();
 }
