@@ -166,7 +166,7 @@ function placeAnimals() {
 	let animalNative = document.getElementsByClassName('small-p');
 
 	if (back) {
-		for (let i = 0; i<animalPhoto; i+=2) {
+		for (let i = 0; i<animalPhoto.length; i+=2) {
 			back = false;
 			animalPhoto[i].src = setAnimals[setCurrent][i/2].imgLink
 			animalFood[i].classList[1] = setAnimals[setCurrent][i/2].icon
@@ -179,7 +179,7 @@ function placeAnimals() {
 		}
 	}
 	else {
-		for (let i = 1; i<animalPhoto; i+=2) {
+		for (let i = 1; i<animalPhoto.length; i+=2) {
 			back = true;
 			animalPhoto[i].src = setAnimals[setCurrent][(i-1)/2].imgLink
 			animalFood[i].classList[1] = setAnimals[setCurrent][(i-1)/2].icon
