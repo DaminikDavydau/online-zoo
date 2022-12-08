@@ -169,26 +169,22 @@ function placeAnimals() {
 		for (let i = 0; i<animalPhoto.length; i+=2) {
 			back = false;
 			animalPhoto[i].src = setAnimals[setCurrent][i/2].imgLink
+			console.log(animalFood[i].classList[1])
 			animalFood[i].classList[1] = setAnimals[setCurrent][i/2].icon
 			animalFood[i].src = `${setAnimals[setCurrent][i/2].icon}.png`
 			animalName[i].innerHTML = setAnimals[setCurrent][i/2].name
 			animalNative[i].innerHTML = setAnimals[setCurrent][i/2].small_p
-
-			console.log(animalPhoto[i].src)
-			console.log(setAnimals[setCurrent][i/2].name)
 		}
 	}
 	else {
 		for (let i = 1; i<animalPhoto.length; i+=2) {
 			back = true;
 			animalPhoto[i].src = setAnimals[setCurrent][(i-1)/2].imgLink
+			console.log(animalFood[i].classList[1])
 			animalFood[i].classList[1] = setAnimals[setCurrent][(i-1)/2].icon
 			animalFood[i].src = `${setAnimals[setCurrent][(i-1)/2].icon}.png`
 			animalName[i].innerHTML = setAnimals[setCurrent][(i-1)/2].name
 			animalNative[i].innerHTML = setAnimals[setCurrent][(i-1)/2].small_p
-
-			console.log(animalPhoto[i].src)
-			console.log(setAnimals[setCurrent][i/2].name)
 		}
 	}
 
