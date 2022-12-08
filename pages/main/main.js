@@ -166,25 +166,32 @@ function placeAnimals() {
 	let animalNative = document.getElementsByClassName('small-p');
 
 	if (back) {
-		for (let i = 0; i<animalPhoto; i+2) {
+		for (let i = 0; i<animalPhoto; i+=2) {
 			back = false;
 			animalPhoto[i].src = setAnimals[setCurrent][i/2].imgLink
 			animalFood[i].classList[1] = setAnimals[setCurrent][i/2].icon
 			animalFood[i].src = `${setAnimals[setCurrent][i/2].icon}.png`
 			animalName[i].innerHTML = setAnimals[setCurrent][i/2].name
 			animalNative[i].innerHTML = setAnimals[setCurrent][i/2].small_p
+
+			console.log(animalPhoto[i].src)
+			console.log(setAnimals[setCurrent][i/2].name)
 		}
 	}
 	else {
-		for (let i = 1; i<animalPhoto; i+2) {
+		for (let i = 1; i<animalPhoto; i+=2) {
 			back = true;
 			animalPhoto[i].src = setAnimals[setCurrent][(i-1)/2].imgLink
 			animalFood[i].classList[1] = setAnimals[setCurrent][(i-1)/2].icon
 			animalFood[i].src = `${setAnimals[setCurrent][(i-1)/2].icon}.png`
 			animalName[i].innerHTML = setAnimals[setCurrent][(i-1)/2].name
 			animalNative[i].innerHTML = setAnimals[setCurrent][(i-1)/2].small_p
+
+			console.log(animalPhoto[i].src)
+			console.log(setAnimals[setCurrent][i/2].name)
 		}
 	}
+
 	console.log('finish place animals')
 }
 
@@ -207,7 +214,7 @@ async function rotate(dir) {
 			for (let i = card.length-1; i>=0; --i) {
 			card[i].classList.add('rotateR')
 			card[i].classList.remove('rotateL')
-			await delay(100)
+			await delay(150)
 		}
 	}
 		else {
@@ -217,7 +224,7 @@ async function rotate(dir) {
 			for (let i = 0; i<card.length; ++i) {
 			card[i].classList.add('rotateR')
 			card[i].classList.remove('rotateL')
-			await delay(100)
+			await delay(150)
 		}
 		
 	}
@@ -233,7 +240,7 @@ async function rotate(dir) {
 			for (let i = card.length-1; i>=0; --i) {
 			card[i].classList.add('rotateL')
 			card[i].classList.remove('rotateR')
-			await delay(100)
+			await delay(150)
 		}
 	}
 		else {
@@ -243,12 +250,12 @@ async function rotate(dir) {
 			for (let i = 0; i<card.length; ++i) {
 			card[i].classList.add('rotateL')
 			card[i].classList.remove('rotateR')
-			await delay(100)
+			await delay(150)
 		}
 	}
 }
 	
-	await delay(2000)
+	await delay(2100)
 	arr[0].setAttribute('onclick', 'rotate("left")')
 	arr[1].setAttribute('onclick', 'rotate("right")')
 	//await delay(3000);
