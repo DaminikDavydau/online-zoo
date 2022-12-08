@@ -16,7 +16,13 @@ function highlight_default(wdth) {
 	//}
 };
 
-highlight_default(screen_width);
+try {
+	highlight_default(screen_width);
+}
+catch(err) {
+	console.log('Not a donate page')
+}
+
 
 function removeCheck() {
 	const buttonPriv = document.querySelector(".checked")
@@ -34,7 +40,7 @@ function clickamnt(n) {
 		removeCheck()
 	}
 	finally {
-		const buttons = document.querySelectorAll(".chose_amount_radio")
+	const buttons = document.querySelectorAll(".chose_amount_radio")
 	const money = document.querySelectorAll("span.money")
 	const input = document.querySelector("input.an_amount")
 	const moneyValues = [5000, 2000, 1000, 500, 250, 100, 50, 25]
@@ -123,7 +129,7 @@ function random(data) {
 			list[i].push(data[num]);
 			if (list[i].indexOf(data[num]) != j) {
 				j=j-1;
-				list[i].pop()
+				poped = list[i].pop()
 			}
 		}
 	}
@@ -132,7 +138,7 @@ function random(data) {
 	placeAnimals();
 }
 
-fetch('./animals.json') //path to the file with json data
+fetch('animals.json') //path to the file with json data
         .then(response => {
         	console.log('json response')
             return response.json();
