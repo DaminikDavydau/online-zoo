@@ -11,22 +11,42 @@
 </head>
 <body>
 	<div id="page-wrapper">
+	<div id="nav_phone" onclick="hideMenu()">
+			<div id="nav_phone_wrap" onclick="showMenu()">
+				<div onclick="showMenu()">
+					<a href="./index.html"><img src="logo_burger.png"></a>
+					<img src="cross-icon.png" id="cross_menu" onclick="hideMenu()">
+				</div>
+				<a class="phone_link" href="./index.html">About</a>
+				<a class="phone_link" href="">Map</a>
+				<a class="phone_link" href="">Zoos</a>
+				<a class="phone_link" href="./donate.html">Donate</a>
+				<a class="phone_link" href="">Contact us</a>
+				<a class="phone_link " href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
+
+			</div>
+		</div>
+	
 	<header>
+		
 		<nav>
 		<a class="logo" href="./index.html">
 			<h1 id="logo">
 				PetStory Online
 			</h1>
 		</a>
-			<img src="burger_menu.png" id="burger_menu">
 
-			<a class="light" href="./index.html">About</a>
+			<img src="burger_menu.png" id="burger_menu" onclick="showMenu()">
+
+			<a class="inter" href="./index.html">About</a>
 			<a class="inter" href="">Map</a>
 			<a class="inter" href="">Zoos</a>
-			<a class="inter" href="./donate.html">Donate</a>
+			<a class="light" href="./donate.html">Donate</a>
 			<a class="inter" href="">Contact us</a>
 			<a class="inter copyright" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
 		</nav>
+
+
 	</header>
 	<main>
 
@@ -73,27 +93,25 @@
 			<img class="leaves_s3" src="leaves_s3.png">
 			<img class="leaves_s31" src="leaves_s31.png">
 			<div class="courusel">
-				<div class="arrow frst">&larr;</div>
+				<div class="arrow frst" onclick="rotate('left')">&larr;</div>
 				<div class="grid-container">
 					<div class="grid-item-border">
-						<div class="grid-item">
-							<div class="main"><img class="main" src="pandas.png"></div>
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="chameleon.jpg"></div>
 							<div class="grid-item-foot">
-								<img class="icon bamboo" src="bambo_banan.png">
+								<img class="icon bamboo" src="bamboo.png">
 								<p class="btn">
-									GIANT PANDAS
+									CHAMELEON
 								</p>
 								<p class="small-p">
-									Native to Southwest China
+									Native to Sri Lanka
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="grid-item-border">
 						<div class="grid-item">
-							<div class="main"><img class="main" src="eagle.png"></div>
+							<div class="main"><img class="animal_photo main" src="eagle.png"></div>
 							<div class="grid-item-foot">
-								<img class="icon meat" src="meat_fish.png">
+								<img class="icon meat" src="meat.png">
 								<p class="btn">
 									EAGLES
 								</p>
@@ -104,10 +122,49 @@
 						</div>
 					</div>
 					<div class="grid-item-border">
-						<div class="grid-item">
-							<div class="main"><img class="main" src="gorilla.png"></div>
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="pandas.png"></div>
 							<div class="grid-item-foot">
-								<img class="icon bamboo" src="bambo_banan.png">								<p class="btn">
+								<img class="icon bamboo" src="bamboo.png">
+								<p class="btn">
+									GIANT PANDAS
+								</p>
+								<p class="small-p">
+									Native to Southwest China
+								</p>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="main"><img class="animal_photo main" src="turtle.jpg"></div>
+							<div class="grid-item-foot">
+								<img class="icon meat" src="meat.png">
+								<p class="btn">
+									HAWKSBILL SEA TURTLE
+								</p>
+								<p class="small-p">
+									Native to Brazil
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item-border">
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="wolf.jpg"></div>
+							<div class="grid-item-foot">
+								<img class="icon meat" src="meat.png">
+								<p class="btn">
+									WOLF
+								</p>
+								<p class="small-p">
+									Native to Russia
+								</p>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="main"><img class="animal_photo main" src="gorilla.png"></div>
+							<div class="grid-item-foot">
+								<img class="icon bamboo" src="bamboo.png">								
+								<p class="btn">
 									GORILLAS
 								</p>
 								<p class="small-p">
@@ -117,10 +174,22 @@
 						</div>
 					</div>
 					<div class="grid-item-border">
-						<div class="grid-item">
-							<div class="main"><img class="main" src="sloth.png"></div>
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="ara.jpg"></div>
 							<div class="grid-item-foot">
-								<img class="icon bamboo" src="bambo_banan.png">
+								<img class="icon bamboo" src="bamboo.png">
+								<p class="btn">
+									ARA
+								</p>
+								<p class="small-p">
+									Native to Colombia
+								</p>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="main"><img class="animal_photo main" src="sloth.png"></div>
+							<div class="grid-item-foot">
+								<img class="icon bamboo" src="bamboo.png">
 								<p class="btn">
 									TWO-TOED SLOTH
 								</p>
@@ -131,10 +200,22 @@
 						</div>
 					</div>
 					<div class="grid-item-border">
-						<div class="grid-item">
-							<div class="main"><img class="main" src="cheetah.png"></div>
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="manoel.jpg"></div>
 							<div class="grid-item-foot">
-								<img class="icon meat" src="meat_fish.png">
+								<img class="icon meat" src="meat.png">
+								<p class="btn">
+									MANOEL
+								</p>
+								<p class="small-p">
+									Native to Mongolia
+								</p>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="main"><img class="animal_photo main" src="cheetah.png"></div>
+							<div class="grid-item-foot">
+								<img class="icon meat" src="meat.png">
 								<p class="btn">
 									CHEETAHS
 								</p>
@@ -145,10 +226,22 @@
 						</div>
 					</div>
 					<div class="grid-item-border">
-						<div class="grid-item">
-							<div class="main"><img class="main" src="allidator.png"></div>
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="fox.jpg"></div>
 							<div class="grid-item-foot">
-								<img class="icon meat" src="meat_fish.png">
+								<img class="icon meat" src="meat.png">
+								<p class="btn">
+									POLAR FOX
+								</p>
+								<p class="small-p">
+									Native to Finland
+								</p>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="main"><img class="animal_photo main" src="allidator.png"></div>
+							<div class="grid-item-foot">
+								<img class="icon meat" src="meat.png">
 								<p class="btn">
 									ALLIGATORS
 								</p>
@@ -159,10 +252,22 @@
 						</div>
 					</div>
 					<div class="grid-item-border">
-						<div class="grid-item">
-							<div class="main"><img class="main" src="penguins.png"></div>
+						<div class="grid-item back">
+							<div class="main"><img class="animal_photo main" src="deer.jpg"></div>
 							<div class="grid-item-foot">
-								<img class="icon meat" src="meat_fish.png">
+								<img class="icon meat" src="meat.png">
+								<p class="btn">
+									DEER
+								</p>
+								<p class="small-p">
+									Native to Canada
+								</p>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="main"><img class="animal_photo main" src="penguins.png"></div>
+							<div class="grid-item-foot">
+								<img class="icon meat" src="meat.png">
 								<p class="btn">
 									PENGUINS
 								</p>
@@ -173,7 +278,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="arrow scnd">&rarr;</div>
+				<div class="arrow scnd" onclick="rotate('right')">&rarr;</div>
 				<div></div>
 				<button id="favorite">CHOOSE YOUR FAVORITE</button>
 			</div>
@@ -361,6 +466,10 @@ The best online zoo I’ve met. My son delighted very much ljves to watch gouill
 		</div>
 	</footer>
 	</div>
+
+
+	<script type="text/javascript" src="./main.js"></script>
+
 </body>
 </html>
 

@@ -10,14 +10,32 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="nav_phone" onclick="hideMenu()">
+			<div id="nav_phone_wrap" onclick="showMenu()">
+				<div onclick="showMenu()">
+					<a href="./index.html"><img src="logo_burger.png"></a>
+					<img src="cross-icon.png" id="cross_menu" onclick="hideMenu()">
+				</div>
+				<a class="phone_link" href="./index.html">About</a>
+				<a class="phone_link" href="">Map</a>
+				<a class="phone_link" href="">Zoos</a>
+				<a class="phone_link" href="./donate.html">Donate</a>
+				<a class="phone_link" href="">Contact us</a>
+				<a class="phone_link " href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
+
+			</div>
+		</div>
+	
 	<header>
+		
 		<nav>
 		<a class="logo" href="./index.html">
 			<h1 id="logo">
 				PetStory Online
 			</h1>
 		</a>
-			<img src="burger_menu.png" id="burger_menu">
+
+			<img src="burger_menu.png" id="burger_menu" onclick="showMenu()">
 
 			<a class="inter" href="./index.html">About</a>
 			<a class="inter" href="">Map</a>
@@ -26,6 +44,8 @@
 			<a class="inter" href="">Contact us</a>
 			<a class="inter copyright" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
 		</nav>
+
+
 	</header>
 	<main>
 
@@ -67,14 +87,14 @@
 						</div>
 						
 						
-						<input class="chose_amount_radio first" type="radio" name="amount">
-						<input class="chose_amount_radio" type="radio" name="amount">
-						<input class="chose_amount_radio" type="radio" name="amount" checked="checked">
-						<input class="chose_amount_radio" type="radio" name="amount"> 
-						<input class="chose_amount_radio" type="radio" name="amount">
-						<input class="chose_amount_radio" type="radio" name="amount">
-						<input class="chose_amount_radio" type="radio" name="amount">
-						<input class="chose_amount_radio" type="radio" name="amount"> 
+						<input class="chose_amount_radio first" type="radio" name="amount0" onclick="clickamnt(0)">
+						<input class="chose_amount_radio" type="radio" name="amount1" onclick="clickamnt(1)">
+						<input class="chose_amount_radio" type="radio" name="amount2" onclick="clickamnt(2)">
+						<input class="chose_amount_radio" type="radio" name="amount3" onclick="clickamnt(3)"> 
+						<input class="chose_amount_radio" type="radio" name="amount4" onclick="clickamnt(4)">
+						<input class="chose_amount_radio" type="radio" name="amount5" onclick="clickamnt(5)">
+						<input class="chose_amount_radio" type="radio" name="amount6" onclick="clickamnt(6)">
+						<input class="chose_amount_radio" type="radio" name="amount7" onclick="clickamnt(7)"> 
 					</div>
 					<p class="money">
 						<span class="money first">
@@ -104,7 +124,7 @@
 					</p>
 				</div>
 				<div class="an_amount">
-					<input class="an_amount" type="number"  placeholder="Another amount">
+					<input class="an_amount" type="number"  placeholder="Another amount" onkeypress="inputamnt(this.value)" onkeyup="inputsame(this.value)">
 					<span style="color: #929699; font-size: 20px;">$</span>
 				</div>
 				<div class="radio_container">
@@ -166,6 +186,9 @@
 			</p>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="./main.js"></script>
+
 </body>
 </html>
 
