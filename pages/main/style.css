@@ -581,15 +581,24 @@ section#testimonials h3 {
 	font-weight: 400;
 	text-align: center;
 }
-section#testimonials .test-grid {
+section#testimonials #tests_wrapper {
 	margin-top: 47px;
-	display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0px 30px;
-    place-items: center;
+	width: 1140px;
     margin-right: auto;
   	margin-left: auto;
-  	justify-content: center;
+  	
+  	overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+section#testimonials #tests_wrapper::-webkit-scrollbar {
+  height: 0;
+}
+section#testimonials .test-grid {
+	
+	display: flex;
+	gap: 0px 30px;
+    place-items: center;
  }
 section#testimonials .tests {
 	width: 268px;
@@ -629,14 +638,35 @@ section#testimonials .tests_body {
 }
 
 section#testimonials .progress-container {
+	-webkit-appearance: none;
 	width:599px;
 	height:8px;
+	display: block;
 	background-color:#F5F7F6;
 	border: 1px solid rgba(243, 169, 248, 0.66);
 	border-radius:5px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 22px;
+}
+section#testimonials .progress-container::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color:#FE9013;
+	height:8px;
+	width: 75px;
+	line-height:inherit;
+	border-radius:5px;
+	cursor: pointer;
+
+}
+
+section#testimonials .progress-container::-moz-range-thumb {
+  background-color:#FE9013;
+	height:8px;
+	width: 75px;
+	line-height:inherit;
+	border-radius:5px;
+	cursor: pointer;
 }
 section#testimonials .progressbar {
 	background-color:#FE9013;
@@ -1075,16 +1105,17 @@ body div#page-wrapper{
 	section#testimonials h3 {
 		margin-top: calc(100px + (100vw - 1000px)/600*(140 - 100));
 	}
-	section#testimonials .test-grid {
+	section#testimonials #tests_wrapper {
 		margin-top: calc(30px + (100vw - 1000px)/600*(47 - 30));
+		width: calc(875px + (100vw - 1000px)/600*(835 - 875));
+	}
+	section#testimonials .test-grid {
+		
 		display: flex;    
 		gap: 0px 30px;
 	 }
 	section#testimonials .tests {
 		width: calc(293px + (100vw - 1000px)/600*(268 - 293));
-	}
-	section#testimonials .tests:nth-of-type(4) {
-		display: none;
 	}
 
 	section#testimonials .tests_head {
@@ -1100,6 +1131,17 @@ body div#page-wrapper{
 		width: calc(250px + (100vw - 1000px)/600*(237 - 250));
 	}
 
+
+section#testimonials .progress-container::-webkit-slider-thumb {
+  	-webkit-appearance: none;
+ 	width: calc((390px + (100vw - 1000px)/600*(599 - 390))/9);
+	height:8px;
+
+}
+
+section#testimonials .progress-container::-moz-range-thumb {
+	width: calc((390px + (100vw - 1000px)/600*(599 - 390))/9);
+}
 	section#testimonials .progress-container {
 		width: calc(390px + (100vw - 1000px)/600*(599 - 390));
 		height:8px;
@@ -1469,16 +1511,29 @@ section#pick_and_feed .process-p {
 		width: calc(100% - 40px);
 		height: 109px;
 	}
-	section#testimonials .tests:nth-of-type(2) {
+	section#testimonials .tests:nth-of-type(4) {
 		display: none;
 	}
-	section#testimonials .tests:nth-of-type(4) {
-		display: block;
-		order: 2;
+	section#testimonials .tests:nth-of-type(5) {
+		display: none;
 	}
-	section#testimonials .tests:nth-of-type(3) {
-		display: block;
-		order: 3;
+	section#testimonials .tests:nth-of-type(6) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(7) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(8) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(9) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(10) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(11) {
+		display: none;
 	}
 	section#testimonials .tests_head {
 		margin-top: 10px;
@@ -1857,16 +1912,29 @@ section#pick_and_feed .process-p {
 		width: calc(100% - 20px);
 		height: 109px;
 	}
-	section#testimonials .tests:nth-of-type(2) {
+	section#testimonials .tests:nth-of-type(4) {
 		display: none;
 	}
-	section#testimonials .tests:nth-of-type(4) {
-		display: block;
-		order: 2;
+	section#testimonials .tests:nth-of-type(5) {
+		display: none;
 	}
-	section#testimonials .tests:nth-of-type(3) {
-		display: block;
-		order: 3;
+	section#testimonials .tests:nth-of-type(6) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(7) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(8) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(9) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(10) {
+		display: none;
+	}
+	section#testimonials .tests:nth-of-type(11) {
+		display: none;
 	}
 	section#testimonials .tests_head {
 		margin-top: 10px;

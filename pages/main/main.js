@@ -259,11 +259,23 @@ async function rotate(dir) {
 
 
 
+//testiomonials
+var rangeBar = document.getElementsByClassName('progress-container')[0];
+if (screen_width <= 1600) {
+	rangeBar.max = 8
+}
+var carousel =document.getElementById('tests_wrapper')
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
 
 
-
-
+rangeBar.addEventListener('input' , () => {
+	let width = document.getElementsByClassName('tests')[0].offsetWidth;
+	let newValue = rangeBar.value;
+	carousel.scrollTo(newValue * (width + 30), 0);
+}
+);
 
 
 
