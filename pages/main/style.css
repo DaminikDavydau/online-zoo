@@ -374,7 +374,7 @@ section#pets p.small-p {
 }
 .grid-item:hover .grid-item-foot {
 	transition: transform 2s;
-	background: rgba(256, 256, 256, 0.4);
+	background: rgba(255, 255, 255, 0.4);
 	transform: translate(0, -365px);
 	z-index: 900;
 }
@@ -1424,7 +1424,7 @@ section#pets p.small-p {
     	padding-top: 20px;
 	}
 	div.frost_glass {
-		width: 100%; 100%
+		width: 100%;
 		height: calc(794px + (100vw - 980px)/340*(794 - 741));
 	}
 	section#pick_and_feed h2 {
@@ -1457,8 +1457,7 @@ section#pets p.small-p {
 	}
 
 section#pick_and_feed #process {
-	    margin-top: 40px;
-    20: ;
+	  margin-top: 40px;
     display: grid;
     grid-template-columns: auto 0px auto 0px auto;
     gap: 80px 20px;
@@ -1869,8 +1868,8 @@ section#pick_and_feed .process-arr {
 	display: none;
 }
 section#pick_and_feed .process-arr-green {
-	margin-top: -52px;
-    rotate: 83deg;
+	  margin-top: -52px;
+    transform: rotate(83deg);
     margin-left: 141px;
     display: block;
     width: 89px;
@@ -2187,7 +2186,7 @@ input.chose_amount_radio {
 	appearance: none;
 	background-image: url("radio_active.png");
 	background-repeat: no-repeat;
-	padding-top: -3px;
+	padding-top: 0px;
 	background-size: 40px 40px;
     height: 40px;
     width: 40px;
@@ -2886,7 +2885,7 @@ input.chose_amount_radio {
 	background-image: url("radio_active.png");
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
-	padding-top: -3px;
+	padding-top: 3px;
 	background-size: 20px 20px;
     height: 20px;
     width: 20px;
